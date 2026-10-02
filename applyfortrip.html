@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trail club</h1>
+    <p>Student hiking club · Classroom example</p>
+    <nav>
+        <a href="copy.html">Home ·</a>
+        <a href="index2.html">Routes ·</a>
+        <a href="#">Apply for a trip</a>
+    </nav>
+    <hr>
+    <nav>
+        <a href="#">Home →</a>
+        <a href="#">Routes →</a>
+        <a href="#">Application</a>
+    </nav>
+    <h1>Trip Application</h1>
+    <section>
+        <p>This is a practice form. Id does not send or store information</p>
+        <p>This is a practice form. It does not send or store information.</p>
+      <form>
+        <fieldset>
+          <legend>1. Participant</legend>
+          <p></p>
+          <div>
+          </fieldset>
+          <fieldset>
+            <label for="fullname">Full name</label>
+            <input type="text" id="fullname" name="fullname" required>
+          </fieldset>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" >
+          </div>
+
+          <div>
+            <label">Student group</label>
+            <input type="text" id="group">
+          </div>
+        </fieldset>
+    </section>
+    <fieldset">
+          <legend>2. Trip choice</legend>
+          <p></p>
+          <div>
+            <label for="route">Route</label>
+            <select id="route" name="route" required>
+              <option value="">Choose a route</option>
+              <option value="river-walk">River Walk</option>
+              <option value="forest-trail">Forest Trail</option>
+              <option value="ridge-view">Ridge View</option>
+            </select>
+          </div>
+
+          <div">
+            <label for="date">Preferred date <span class="required-mark">*</span></label>
+            <input type="date" id="date" name="date" required>
+          </div>
+
+          <div>
+            <label>Number of participants (1–4)</label>
+            <input type="number" id="participants" name="participants"
+                   min="1" max="4" value="1">
+          </div>
+        </fieldset>
+
+        
+        <fieldset>
+          <legend>3. Experience</legend>
+
+          <div>
+            <label>
+              <input type="radio" name="experience" value="beginner">
+              Beginner
+            </label>
+            <label>
+              <input type="radio" name="experience" value="regular">
+              I hike regularly
+            </label>
+          </div>
+
+          <p>Equipment I have:</p>
+          <div>
+            <label>
+              <input type="checkbox" name="equipment" value="shoes">
+              Walking shoes
+            </label>
+            <label>
+              <input type="checkbox" name="equipment" value="water">
+              Water bottle
+            </label>
+            <label>
+              <input type="checkbox" name="equipment" value="jacket">
+              Jacket
+            </label>
+          </div>
+
+          <div>
+            <label for="notes">Questions or notes</label>
+            <textarea id="notes" name="notes"></textarea>
+          </div>
+
+          <label>
+            <input type="checkbox" name="confirm" required>
+            I have read the route description <span class="required-mark">*</span>
+          </label>
+        </fieldset>
+
+        
+        <div>
+          <button type="submit" class="btn" disabled>Send application</button>
+          <button type="reset" class="btn">Reset form</button>
+        </div>
+
+        <p>
+          * Required fields. Sending remains disabled until a handler is connected.
+        </p>
+      </form>
+    </section>
+    <hr>
+    <footer>
+      <p>Trail Club · Fictional trips and prices for HTML practice</p>
+      <p><a href="#above">Back to top ↑</a></p>
+    </footer>
+  </div>
+</body>
+</html>
